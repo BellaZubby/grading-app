@@ -84,3 +84,13 @@ button:hover {
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 20px;
+    }
+    .inputBoxes {
+        margin-top: 25px;
+        gap:3px;
+    }
+  }

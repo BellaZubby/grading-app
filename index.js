@@ -147,8 +147,8 @@ newEntry.addEventListener("click", function(){
     studentGrade.innerHTML = "";
     teacherRemark.innerHTML = "";
 });
-console.log(localStorage)
-console.log(localStorage.getItem("scoreValues"))
-console.log(localStorage.getItem("studentAverage"))
-console.log(localStorage.getItem("studentGrade"))
-console.log(localStorage.getItem("teacherRemark"))
+// console.log(localStorage)
+// console.log(localStorage.getItem("scoreValues"))
+// console.log(localStorage.getItem("studentAverage"))
+// console.log(localStorage.getItem("studentGrade"))
+// console.log(localStorage.getItem("teacherRemark"))
