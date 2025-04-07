@@ -15,9 +15,9 @@ function getGrade(average) {
         return "A"
     }else if (average >= 70) {
         return "B"
-    }else if (average >=60) {
+    }else if (average >=55) {
         return "C"
-    }else if (average >= 50) {
+    }else if (average >= 54) {
         return "D"
     }else if (average >= 40) {
         return "E"
@@ -94,9 +94,9 @@ calculateAverage.addEventListener("click", function() {
 
     // color for average score
     let averageColor = "";
-    if (average >= 50) {
+    if (average >= 55) {
         averageColor = "#7CCD7C";
-    } else if (average >= 40 && average < 50) {
+    } else if (average >= 40 && average < 55) {
         averageColor = "yellow";
     } else {
         averageColor = "red";
