@@ -1,6 +1,6 @@
 body{
-    background-color: rgba(3, 3, 53);
-    color:rgba(3, 3, 53);;
+    background-color: rgb(129, 129, 130);
+    color: rgb(237, 237, 240);
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,8 +10,9 @@ body{
     height: 100vh;
 }
 .container {
-    background-color: rgb(194, 209, 225);
+    background-color: rgb(10, 10, 66);
     padding: 50px 30px;
+    border-radius: 5px;
 }
 .inputBoxes{
     display: flex;
@@ -64,7 +65,7 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: rgba(3, 3, 53);
+    background-color: rgb(71, 71, 180);
     color: white;
 }
 .result {
@@ -76,7 +77,6 @@ button:hover {
 .averageGrade {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 20px;
 }
 .newEntry {
@@ -92,5 +92,35 @@ button:hover {
     .inputBoxes {
         margin-top: 25px;
         gap:3px;
+    }
+    .inputBoxes input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 90%;
+        outline: none;
+        font-size: 14px;
+    }
+    .inputBoxes textarea {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 90%;
+        outline: none;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    button {
+        border: none;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(1, 37, 75);
+        border-radius: 5px;
+        box-shadow: -3px 4px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    .result {
+        margin-top: 15px;
     }
   }

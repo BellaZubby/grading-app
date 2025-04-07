@@ -95,7 +95,7 @@ calculateAverage.addEventListener("click", function() {
     // color for average score
     let averageColor = "";
     if (average >= 50) {
-        averageColor = "green";
+        averageColor = "#7CCD7C";
     } else if (average >= 40 && average < 50) {
         averageColor = "yellow";
     } else {
@@ -106,7 +106,9 @@ calculateAverage.addEventListener("click", function() {
     studentAverage.style.color = averageColor;
 
     studentGrade.innerHTML = `${grade}`
+    studentGrade.style.color = averageColor;
     teacherRemark.innerHTML = `${remark}`
+    teacherRemark.style.color = averageColor;
     
     // store data in local storage
     localStorage.setItem("Studentname", name)
@@ -132,8 +134,14 @@ window.addEventListener("load", function () {
         studentAverage.innerHTML = storedAverage;
         studentAverage.style.color = averageColor;
     }
-    if (storedGrade) studentGrade.innerHTML = storedGrade;
-    if (storedRemark) teacherRemark.innerHTML = storedRemark;
+    if (storedGrade) {
+        studentGrade.innerHTML = storedGrade;
+        studentGrade.style.color = averageColor;
+    }
+    if (storedRemark) {
+        teacherRemark.innerHTML = storedRemark;
+        teacherRemark.style.color = averageColor;
+    } 
 });
 
 // reset for new entry
